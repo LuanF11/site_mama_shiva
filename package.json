@@ -1,0 +1,25 @@
+{
+  "name": "site-mama-shiva",
+  "version": "1.0.0",
+  "description": "Site para o restaurante Mama Shiva, versão mobile e desktop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "site_mama_shiva"
+  },
+  "keywords": [
+    "restaurante",
+    "site",
+    "node.js",
+    "site",
+    "restaurante",
+    "mama",
+    "shiva",
+    "responsivo"
+  ],
+  "author": "Caio de Almeida Araujo",
+  "license": "ISC"
+}
