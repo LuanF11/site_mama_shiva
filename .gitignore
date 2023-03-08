@@ -1,0 +1,36 @@
+# Arquivos e diretórios a serem ignorados pelo Git
+
+# Arquivos de log
+*.log
+
+# Arquivos de ambiente
+.env
+
+# Dependências instaladas pelo NPM
+node_modules/
+
+# Arquivos gerados durante o build
+build/
+
+# Arquivos de backup
+*.bak
+
+# Arquivos de configuração do editor
+.vscode/
+
+# Arquivos temporários
+.tmp/
+
+# Arquivos de cache
+.cache/
+
+# Diretório de saída do TypeScript
+dist/
+
+# Arquivos gerados pelo IDE
+.idea/
+
+# Arquivos de sistema do Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
