@@ -1,4 +1,26 @@
+:root{
+    /* Definição das cores */
+    --col-brown: #352005;
+    --col-red-100: #A12015;
+    --col-red-200: #61140D;
+    --col-green-100: #198642;
+    --col-green-200: #136733;
+    --col-green-300: #0E4724;
+    --col-yellow-100: #FF9933;
+    --col-white: #FFFFFF;
+
+    /* Definição das fontes */
+    --font-main: "Crimson Text", 'Times New Roman', Times, serif;
+    --font-read: "Crimson Pro", 'Times New Roman', Times, serif;
+
+    /* Definição do espaçamento padrao */
+    --padding-1: 4em;
+    --gap-1: 2em;
+    --gap-2: calc(2 * var(--gap-1));
+    --gap-3: calc(3 * var(--gap-1));
+}
+
 .container{
     display: flex;
-    padding: 4em;
+    padding: var(--padding-1);
 }

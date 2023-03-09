@@ -1,12 +1,3 @@
-:root{
-    /* Definição das cores */
-    --col-brown: #352005;
-
-    /* Definição das fontes */
-    --font-main: "Crimson Text", 'Times New Roman', Times, serif;
-    --font-read: "Crimson Pro", 'Times New Roman', Times, serif;
-}
-
 html{
     font-family: var(--font-crimson-text);
 }
@@ -18,6 +9,7 @@ html{
 }
 
 .navbar--logo {
+    /*! Ao modificar, atualizar o cálculo da altura do .hero */
     height: 6em;
 }
 
@@ -27,5 +19,52 @@ html{
 
 /* Hero mobile */
 .hero {
-    
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--gap-2);
+    text-align: center;
+
+
+    /* Altura do hero */
+    min-height: calc(100svh - 4 * var(--padding-1) - 6em);
+}
+
+.hero--message{
+    display: flex;
+    flex-direction: column;
+    color: var(--col-red-200);
+    gap: var(--gap-2);
+}
+
+.hero--message-main{
+    font-size: 5em;
+    font-weight: bold;
+}
+
+.hero--message-main span{
+    color: var(--col-red-100);
+}
+
+.hero--message-secondary {
+    font-size: 1.5em;
+}
+
+.hero--image{
+    aspect-ratio: 1;
+    max-width: 100%;
+    background-image: url("/img/hero_image.png");
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.hero--cta {
+    background-color: var(--col-red-100);
+    border-radius: 10em;
+}
+
+.hero--cta-text{
+    width: 100%;
+    color: var(--col-white);
+    font-weight: bold;
+    font-size: 1.75em;
 }
