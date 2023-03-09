@@ -1,16 +1,31 @@
-html{
-    font-family: "Crimson Text", 'Times New Roman', Times, serif;
+:root{
+    /* Definição das cores */
+    --col-brown: #352005;
+
+    /* Definição das fontes */
+    --font-main: "Crimson Text", 'Times New Roman', Times, serif;
+    --font-read: "Crimson Pro", 'Times New Roman', Times, serif;
 }
 
+html{
+    font-family: var(--font-crimson-text);
+}
+
+/* Navbar mobile*/
 .navbar {
-    font-size: 2em;
+    justify-content: space-between;
+    align-items: end;
 }
 
 .navbar--logo {
-    height: 2em;
-    background-color: black;
+    height: 6em;
 }
 
-.grid-col-12{
-    padding: 24px;
+.navbar--menu{
+    height: 4em;
+}
+
+/* Hero mobile */
+.hero {
+    
 }

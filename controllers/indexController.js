@@ -6,6 +6,7 @@ const indexController = {
         cssList : [
           "css/reset.css",
           "css/fonts.css",
+          "css/utils.css",
           "css/indexCss.css",
         ]
       });
