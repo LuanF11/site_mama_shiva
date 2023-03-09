@@ -19,6 +19,9 @@ Object.keys(ifaces).forEach((ifname) => {
   }
 });
 
+// Libera o acesso à pasta public
+app.use(express.static('public'));
+
 const indexRouter = require('./routes/indexRoute');
 
 // Configurando o EJS como view engine

@@ -1,0 +1,16 @@
+html{
+    font-family: "Crimson Text", 'Times New Roman', Times, serif;
+}
+
+.navbar {
+    font-size: 2em;
+}
+
+.navbar--logo {
+    height: 2em;
+    background-color: black;
+}
+
+.grid-col-12{
+    padding: 24px;
+}

@@ -2,7 +2,13 @@ const indexController = {
 
     // Renderiza a página principal
     index(req, res) {
-      res.render('index');
+      res.render('index', {
+        cssList : [
+          "css/reset.css",
+          "css/fonts.css",
+          "css/indexCss.css",
+        ]
+      });
     }
   };
   

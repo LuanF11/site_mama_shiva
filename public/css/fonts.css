@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Crimson Text";
+    src: url("../fonts/CrimsonText-Regular.ttf") format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Crimson Text";
+    src: url("../fonts/CrimsonText-Bold.ttf") format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Crimson Pro";
+    src: url("../fonts/CrimsonPro-VariableFont_wght.ttf") format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Crimson Pro";
+    src: url("../fonts/CrimsonPro-Italic-VariableFont_wght.ttf") format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+
