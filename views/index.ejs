@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Mama Shiva</title>
 
-    <% for (var i = 0; i < cssList.length; i++) { %>
-      <link rel="stylesheet" href="<%= cssList[i] %>">
-    <% } %>
-    
-  </head>
-  <body>
-    <!-- Navbar do site -->
-    <div class="navbar container">
-      <img class="navbar--logo" src="/img/logo.svg" alt="Logo do restaurante Mama Shiva">
-      <img class="navbar--menu" src="/img/hamburger_menu.svg" alt="Menu de opções">
-      </div>
-    </div>
+<head>
+  <meta charset="utf-8">
+  <title>Mama Shiva</title>
 
-    <!-- Hero -->
-    <div class="hero container">
-      <div class="hero--message">
-        <div class="hero--message-main text-bold">Dois mundos, <span>uma experiência gastronômica</span></div>
-        <div class="hero--message-secondary">Conheça o nosso incrível cardápio de fusão itálico-indiano</div>
-      </div>
-      <!-- <div class="hero--image">oii</div> -->
-      <img class="hero--image" src="/img/hero_image.png" alt="Um prato com comidas italianas e indianas">
-      <div class="hero--cta container text-bold"><div class="hero--cta-text">Veja o cardápio</div></div>
+  <% for (var i = 0; i < cssList.length; i++) { %>
+  <link rel="stylesheet" href="<%= cssList[i] %>">
+  <% } %>
+
+</head>
+
+<body>
+  <!-- Navbar do site -->
+  <div class="navbar container">
+    <img class="navbar--logo" src="/img/logo.svg" alt="Logo do restaurante Mama Shiva">
+    <img class="navbar--menu" src="/img/hamburger_menu.svg" alt="Menu de opções">
+  </div>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero container">
+    <div class="hero--message">
+      <div class="hero--message-main text-bold">Dois mundos, <span>uma experiência gastronômica</span></div>
+      <div class="hero--message-secondary">Conheça o nosso incrível cardápio de fusão itálico-indiano</div>
     </div>
-  </body>
+    <img class="hero--image" src="/img/hero_image.png" alt="Um prato com comidas italianas e indianas">
+    <div class="hero--cta text-bold clickable-object">
+      <div class="hero--cta-text">Veja o cardápio</div>
+    </div>
+  </div>
 
   <!-- Endereço abaixo do fold -->
   <div class="endereco-fold container">
@@ -41,8 +43,8 @@
     <div class="beneficios--main">
       <div class="beneficio container">
         <img class="beneficio--image" src="/img/hero_image.png" alt="Um prato com comidas italianas e indianas">
-        <div class="beneficio--titulo text-bold">Uma viagem pelas massas e especiarias</div>
-        <div class="beneficio--texto">Com ingredientes de qualidade e cuidadosamente selecionados, nossos pratos combinam o melhor da culinária italiana e indiana, criando uma deliciosa viagem pelas massas e especiarias que irá encantar seu paladar. Experimente agora e embarque nessa jornada gastronômica única.</div>
+        <div class="beneficio--title text-bold">Uma viagem pelas massas e especiarias</div>
+        <div class="beneficio--text">Com ingredientes de qualidade e cuidadosamente selecionados, nossos pratos combinam o melhor da culinária italiana e indiana, criando uma deliciosa viagem pelas massas e especiarias que irá encantar seu paladar. Experimente agora e embarque nessa jornada gastronômica única.</div>
       </div>
     </div>
     <div class="beneficios--slider">
@@ -53,4 +55,56 @@
       <div class="beneficios--slider-marker" data-active="false" nav="Opção numero 5 do carrossel de beneficios do restaurante"></div>
     </div>
   </div>
+
+  <!-- Informações -->
+  <div class="informacoes-container">
+    <div class="informacoes--section container-margin"><span>Informações</span></div>
+    <div class="informacoes--horario">
+      <div class="informacoes--horario-title">Horários</div>
+      <div class="informacoes--horario-body">
+        <ul>
+          <li>Segunda-feira: <span>Fechado</span></li>
+          <li>Terça-feira: <span>18h - 22h</span></li>
+          <li>Quarta-feira: <span>18h - 22h</span></li>
+          <li>Quinta-feira: <span>18h - 22h</span></li>
+          <li>Sexta-feira: <span>12h - 15h, 18h - 23h</span></li>
+          <li>Sábado: <span>12h - 15h, 18h - 23h</span></li>
+          <li>Domingo: <span>12h - 15h, 18h - 22h</span></li>
+        </ul>
+      </div>
+      <div class="informacoes--horario-links">
+        <div class="informacoes--horario-link" data-active="false"><span>Endereço</span></div>
+        <div class="informacoes--horario-link" data-active="true"><span>Horários</span></div>
+        <div class="informacoes--horario-link" data-active="false"><span>Contatos</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Criticas -->
+  <div class="criticas-container container">
+    <div class="criticas--main">
+      <div class="critica container">
+        <img class="critica--image" src="/img/hero_image.png" alt="Um prato com comidas italianas e indianas">
+        <div class="critica--title text-bold">Ana Paula Alves</div>
+        <div class="critica--stars">
+          <img class="critica--star" src="/img/star.svg" alt="Uma estrela">
+          <img class="critica--star" src="/img/star.svg" alt="Uma estrela">
+          <img class="critica--star" src="/img/star.svg" alt="Uma estrela">
+          <img class="critica--star" src="/img/star.svg" alt="Uma estrela">
+          <img class="critica--star" src="/img/star.svg" alt="Uma estrela">
+        </div>
+        <div class="critica--text">O Mama Shiva é uma ótima opção para quem gosta de experimentar sabores diferentes. Os pratos são muito bem elaborados e o ambiente é muito agradável. O atendimento também foi muito bom. Recomendo!</div>
+      </div>
+    </div>
+    <img class="critica--comma" src="/img/comma.svg" alt="Uma aspas aberta para indicar citação">
+    <div class="criticas--slider">
+      <div class="criticas--slider-marker" data-active="true" nav="Opção numero 1 do carrossel de criticas do restaurante"></div>
+      <div class="criticas--slider-marker" data-active="false" nav="Opção numero 2 do carrossel de criticas do restaurante"></div>
+      <div class="criticas--slider-marker" data-active="false" nav="Opção numero 3 do carrossel de criticas do restaurante"></div>
+      <div class="criticas--slider-marker" data-active="false" nav="Opção numero 4 do carrossel de criticas do restaurante"></div>
+      <div class="criticas--slider-marker" data-active="false" nav="Opção numero 5 do carrossel de criticas do restaurante"></div>
+    </div>
+  </div>
+</body>
+
 </html>

@@ -32,5 +32,5 @@ app.set('view engine', 'ejs');
 app.use('/', indexRouter);
 
 // Inicializando o servidor
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 app.listen(PORT, () => console.log(`Servidor rodando na porta ${ipAddress}:${PORT}`));
