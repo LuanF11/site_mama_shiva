@@ -2,36 +2,79 @@
   /* Definição das cores */
   --col-brown: #352005;
   --col-red-100: #a12015;
-  --col-red-200: #61140d;
   --col-green-100: #198642;
-  --col-green-200: #136733;
-  --col-green-300: #0e4724;
-  --col-yellow-100: #ff9933;
+  --col-green-200: #157539;
+  --col-yellow-100: #ff8000;
   --col-white: #ffffff;
 
   /* Definição das fontes */
-  --font-main: "Crimson Text", "Times New Roman", Times, serif;
-  --font-read: "Crimson Pro", "Times New Roman", Times, serif;
+  --font-main: "Montserrat", sans-serif;
 
   /* Definição do espaçamento padrao */
-  --padding-1: 4rem;
-  --margin-1: 4rem;
-  --gap-1: 2em;
+  --padding-1: 2rem;
+  --padding-2: calc(2 * var(--padding-1));
+  --padding-3: calc(3 * var(--padding-1));
+  --padding-4: calc(4 * var(--padding-1));
+
+  --margin-1: 1rem;
+  --margin-2: calc(2 * var(--margin-1));
+  --margin-3: calc(3 * var(--margin-1));
+  --margin-4: calc(4 * var(--margin-1));
+
+  --gap-1: 1rem;
   --gap-2: calc(2 * var(--gap-1));
   --gap-3: calc(3 * var(--gap-1));
 }
 
-.container {
-  display: flex;
+html {
+  font-family: var(--font-main);
+}
+
+/* Utilitarios de padding */
+.p-1 {
   padding: var(--padding-1);
 }
 
-.container-margin {
-  display: flex;
-  padding: var(--padding-1);
-  margin: var(--margin-1);
+.p-2 {
+  padding: var(--padding-2);
 }
 
-.text-bold {
-  font-weight: bold;
+.p-3 {
+  padding: var(--padding-3);
+}
+
+.p-4 {
+  padding: var(--padding-4);
+}
+
+.px-1 {
+  padding: 0 var(--padding-1);
+}
+
+.px-2 {
+  padding: 0 var(--padding-2);
+}
+
+.px-3 {
+  padding: 0 var(--padding-3);
+}
+
+.px-4 {
+  padding: 0 var(--padding-4);
+}
+
+.py-1 {
+  padding: var(--padding-1) 0;
+}
+
+.py-2 {
+  padding: var(--padding-2) 0;
+}
+
+.py-3 {
+  padding: var(--padding-3) 0;
+}
+
+.py-4 {
+  padding: var(--padding-4) 0;
 }

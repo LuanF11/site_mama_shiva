@@ -1,0 +1,90 @@
+.navbar {
+  position: fixed;
+  inset: 0 0 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  padding: var(--padding-3);
+}
+
+.navbar--logo {
+  height: 6em;
+}
+
+.navbar--hamburger {
+  aspect-ratio: 28 / 20;
+  height: 4.25em;
+}
+
+.hero {
+  display: grid;
+
+  background-color: var(--col-green-100);
+  background-image: url("../img/dark_green_background_blob.svg");
+  background-size: cover;
+}
+
+.hero--content {
+  color: var(--col-white);
+  padding: var(--padding-3);
+}
+
+.hero--headline {
+  font-size: 6rem;
+  font-weight: 800;
+
+  margin-top: calc(4 * var(--margin-4));
+}
+
+.hero--message {
+  margin-top: var(--margin-4);
+
+  font-size: 3.5rem;
+}
+
+.hero--cta {
+  width: min-content;
+
+  font-size: 3rem;
+
+  margin-top: var(--margin-4);
+}
+
+.hero--cta span {
+  display: none;
+}
+
+.hero--button {
+  width: 100%;
+
+  font-weight: 900;
+  font-size: 3rem;
+  color: var(--col-white);
+  white-space: nowrap;
+
+  padding: calc(var(--padding-1) * 1.5) var(--padding-3);
+  margin-top: var(--margin-2);
+
+  border-radius: 3rem;
+}
+
+.hero--button:first-child {
+  background-color: var(--col-yellow-100);
+  border: none;
+}
+
+.hero--button:last-child {
+  background-color: transparent;
+  border: none;
+  box-shadow: inset 0 0 0 0.5rem var(--col-yellow-100);
+}
+
+.hero--image {
+  width: 100%;
+}
+
+.hero--social-proof {
+  display: none;
+}
