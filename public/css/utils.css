@@ -30,51 +30,18 @@ html {
   font-family: var(--font-main);
 }
 
-/* Utilitarios de padding */
-.p-1 {
-  padding: var(--padding-1);
-}
-
-.p-2 {
-  padding: var(--padding-2);
-}
-
-.p-3 {
-  padding: var(--padding-3);
-}
-
-.p-4 {
-  padding: var(--padding-4);
-}
-
-.px-1 {
-  padding: 0 var(--padding-1);
-}
-
-.px-2 {
+.section {
   padding: 0 var(--padding-2);
 }
 
-.px-3 {
-  padding: 0 var(--padding-3);
+.section-header {
+  margin-top: var(--padding-4);
+  font-size: 6rem;
+  font-weight: 900;
+  color: var(--col-green-100);
 }
 
-.px-4 {
-  padding: 0 var(--padding-4);
-}
-
-.py-1 {
-  padding: var(--padding-1) 0;
-}
-
-.py-2 {
-  padding: var(--padding-2) 0;
-}
-
-.py-3 {
-  padding: var(--padding-3) 0;
-}
-
-.py-4 {
-  padding: var(--padding-4) 0;
+.card-header {
+  font-size: 4rem;
+  font-weight: bold;
 }
