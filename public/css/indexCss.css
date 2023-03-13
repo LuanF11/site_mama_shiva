@@ -171,3 +171,40 @@
   color: var(--col-green-100);
   line-height: 1.5em;
 }
+
+/*  ------------------------------------------------------ */
+
+.partners {
+  background-color: var(--col-green-100);
+  background-image: url("../img/dark_green_background_blob.svg");
+  background-size: cover;
+}
+
+.partners--header {
+  margin-top: var(--margin-2);
+
+  color: var(--col-white);
+  font-size: 4rem;
+  text-align: center;
+}
+
+.partners--body {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+
+  margin-top: var(--margin-3);
+}
+
+.partners--body img {
+  width: 40%;
+
+  margin-top: var(--margin-3);
+}
+
+.partners--body img:first-of-type {
+  margin-top: var(--margin-2);
+}

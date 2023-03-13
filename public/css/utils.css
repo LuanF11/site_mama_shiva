@@ -31,11 +31,16 @@ html {
 }
 
 .section {
-  padding: 0 var(--padding-2);
+  padding: 0 var(--padding-3);
+}
+
+.section-padded {
+  margin-top: calc(2 * var(--margin-4));
+  padding: var(--padding-4);
 }
 
 .section-header {
-  margin-top: var(--padding-4);
+  margin-top: calc(2 * var(--margin-4));
   font-size: 6rem;
   font-weight: 900;
   color: var(--col-green-100);
