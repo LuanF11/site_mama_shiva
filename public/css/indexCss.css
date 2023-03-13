@@ -88,3 +88,44 @@
 .hero--social-proof {
   display: none;
 }
+
+.benefits {
+  text-align: center;
+
+  padding: calc(1.5 * var(--padding-4)) var(--padding-4);
+}
+
+.benefits--header {
+  font-size: 6rem;
+  font-weight: 900;
+  color: var(--col-green-100);
+}
+
+.benefits--card:first-of-type {
+  margin-top: var(--margin-4);
+}
+
+.benefits--card {
+  margin-top: var(--margin-2);
+}
+
+.benefits--card-image {
+  height: 5rem;
+
+  margin-top: var(--margin-4);
+}
+
+.benefits--card-body {
+  margin-top: var(--margin-2);
+}
+
+.benefits--card-header {
+  color: var(--col-yellow-100);
+
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.benefits--card-message {
+  display: none;
+}
