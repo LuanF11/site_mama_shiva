@@ -424,3 +424,118 @@
 .critics--reviewers .critics--card span {
   background-color: var(--col-red-100);
 }
+
+/*  ------------------------------------------------------ */
+
+.informations--header {
+  text-align: left;
+}
+
+.informations--card {
+  margin-top: var(--margin-3);
+}
+
+.informations--card-header {
+  position: relative;
+
+  color: var(--col-yellow-100);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.informations--card-header::before {
+  content: "";
+
+  position: absolute;
+  left: -3.2rem;
+  top: 0.4rem;
+
+  display: inline-block;
+
+  aspect-ratio: 1;
+  height: 70%;
+
+  background-image: url("/img/icon_location.svg");
+  background-size: 1em;
+  background-repeat: no-repeat;
+}
+
+.informations--card:nth-of-type(2) > .informations--card-header::before {
+  background-image: url("/img/icon_clock.svg");
+}
+
+.informations--card:nth-of-type(3) > .informations--card-header::before {
+  background-image: url("/img/icon_call.svg");
+}
+
+.informations--card-message {
+  margin-top: var(--margin-1);
+
+  color: var(--col-green-100);
+}
+
+.informations--card-cta {
+  margin-top: var(--margin-1);
+
+  color: var(--col-green-100);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.informations--card-cta:has(span) {
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.informations--card-cta:has(span) span {
+  color: var(--col-green-100);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.informations--faq {
+  margin-top: var(--margin-4);
+}
+
+.informations--faq-header {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--col-green-100);
+}
+
+.informations--faq-body {
+  margin-top: var(--margin-4);
+}
+
+.informations--faq-card {
+  margin-top: var(--margin-2);
+}
+
+.informations--faq-card-header {
+  position: relative;
+
+  color: var(--col-green-100);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.informations--faq-card-header::before {
+  content: "";
+
+  position: absolute;
+  left: -3.2rem;
+  top: 0.4rem;
+
+  display: inline-block;
+
+  aspect-ratio: 1;
+  height: 100%;
+
+  background-image: url("/img/icon_dropdown.svg");
+  background-size: 2em;
+  background-repeat: no-repeat;
+}
+
+.informations--faq-card-message {
+  display: none;
+}
