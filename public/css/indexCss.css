@@ -539,3 +539,82 @@
 .informations--faq-card-message {
   display: none;
 }
+
+/*  ------------------------------------------------------ */
+
+.booking {
+  display: grid;
+
+  background-color: var(--col-green-100);
+  background-image: url("../img/background_big_green_blob.svg");
+  background-size: 100%;
+
+  color: var(--col-white-100);
+  font-weight: bold;
+}
+
+.booking--header {
+  font-size: 6rem;
+  font-weight: 900;
+  color: var(--col-white-100);
+}
+
+.booking--body {
+  display: grid;
+  margin-top: var(--margin-2);
+}
+
+.booking--body label {
+  font-size: 3rem;
+  margin-top: var(--margin-2);
+}
+
+.booking--body input {
+  height: 4rem;
+
+  margin-top: var(--margin-1);
+
+  border-radius: 1rem;
+
+  border: 0.25rem solid var(--col-brown-100);
+}
+
+.booking--body textarea {
+  height: 12rem;
+
+  margin-top: var(--margin-1);
+
+  border-radius: 1rem;
+
+  border: 0.25rem solid var(--col-brown-100);
+}
+
+.booking--terms {
+  font-size: 2rem;
+  font-weight: normal;
+
+  margin-top: var(--margin-4);
+}
+
+.booking--terms span {
+  line-height: 3rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.booking--body button {
+  width: 100%;
+
+  font-weight: 900;
+  font-size: 3rem;
+  color: var(--col-white-100);
+  white-space: nowrap;
+
+  padding: calc(var(--padding-1) * 1.5) var(--padding-3);
+  margin-top: var(--margin-2);
+
+  border-radius: 3rem;
+  border: none;
+
+  background-color: var(--col-yellow-100);
+}
