@@ -1,11 +1,11 @@
 :root {
   /* Definição das cores */
-  --col-brown: #352005;
+  --col-brown-100: #352005;
   --col-red-100: #a12015;
   --col-green-100: #198642;
   --col-green-200: #157539;
   --col-yellow-100: #ff9933;
-  --col-white: #ffffff;
+  --col-white-100: #ffffff;
 
   /* Definição das fontes */
   --font-main: "Montserrat", sans-serif;
