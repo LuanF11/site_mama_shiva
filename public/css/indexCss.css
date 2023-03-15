@@ -1,10 +1,11 @@
 .navbar {
     position: fixed;
     inset: 0 0 100%;
+    z-index: 1;
 
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: flex-end;
 
     flex-grow: 1;
 
@@ -15,6 +16,10 @@
 
 .navbar--logo {
     height: 2em;
+}
+
+.navbar--navigation-links {
+    display: none;
 }
 
 .navbar--hamburger {
@@ -96,9 +101,12 @@
 }
 
 .hero--image {
-    width: 100%;
-
     margin-top: var(--margin-3);
+}
+.hero--image img {
+    display: block;
+
+    width: 100%;
 }
 
 .hero--social-proof {
@@ -698,4 +706,117 @@
 
 .footer-legislative .footer--card-message {
     text-decoration: underline;
+}
+
+@media screen and (min-width: 1024px) {
+    :root {
+        --font-header: 2.5em;
+        --font-secondary: 1.5em;
+        --font-read: 1em;
+    }
+
+    html {
+        font-size: 100%;
+    }
+
+    /*  ------------------------------------------------------ */
+
+    .navbar--logo {
+        height: 3em;
+    }
+
+    .navbar--hamburger {
+        display: none;
+    }
+
+    .navbar--navigation-links {
+        display: flex;
+        gap: var(--gap-2);
+    }
+
+    .navbar--navigation-links a {
+        font-weight: bold;
+        font-size: var(--font-read);
+        color: var(--col-white-100);
+        text-decoration: none;
+    }
+
+    /*  ------------------------------------------------------ */
+
+    .hero {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-flow: column;
+
+        height: 100vh;
+        background-color: violet;
+    }
+
+    .hero .section,
+    .hero--image {
+        margin-top: 0;
+    }
+
+    .hero--image {
+        background-image: url("/img/hero_image.png");
+        background-position: center;
+        background-size: auto 100%;
+    }
+
+    .hero--image img {
+        display: none;
+    }
+
+    .hero--content {
+        position: relative;
+        background-color: var(--col-green-200);
+        background-image: url("/img/background_big_green_blob2.svg");
+        background-position: bottom left;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        padding-left: calc(2 * var(--padding-4));
+        padding-top: var(--padding-4);
+    }
+
+    .hero--cta {
+        display: flex;
+        gap: var(--gap-1);
+        align-items: baseline;
+    }
+
+    .hero--cta button {
+        display: inline;
+
+        font-weight: bold;
+
+        border-radius: 0.75em;
+
+        padding: 1em;
+        margin: 0 !important;
+    }
+
+    .hero--cta span {
+        display: inline;
+    }
+
+    .hero--social-proof {
+        position: absolute;
+        right: 4.5em;
+        bottom: 2em;
+
+        display: flex;
+        gap: var(--gap-1);
+        align-items: center;
+
+        width: 16em;
+
+        font-weight: 500;
+    }
+
+    .hero--image {
+        grid-column: 1;
+        background-color: seashell;
+    }
+    /*  ------------------------------------------------------ */
 }
