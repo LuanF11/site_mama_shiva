@@ -22,6 +22,19 @@
     height: 2em;
 }
 
+.navbar--hamburger-background {
+    position: fixed;
+    top: 5em;
+    right: 1em;
+
+    padding: 1em;
+    height: 1em;
+
+    border-radius: 1em;
+    background: var(--col-green-100);
+    opacity: 0.5;
+}
+
 /*  ------------------------------------------------------ */
 
 .hero {
