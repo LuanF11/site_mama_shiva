@@ -1,54 +1,66 @@
 :root {
-  /* Definição das cores */
-  --col-brown-100: #352005;
-  --col-red-100: #a12015;
-  --col-green-100: #198642;
-  --col-green-200: #157539;
-  --col-yellow-100: #ff9933;
-  --col-white-100: #ffffff;
+    /* Definição das cores */
+    --col-brown-100: #352005;
+    --col-red-100: #a12015;
+    --col-green-100: #198642;
+    --col-green-200: #157539;
+    --col-yellow-100: #ff9933;
+    --col-white-100: #ffffff;
 
-  /* Definição das fontes */
-  --font-main: "Montserrat", sans-serif;
+    /* Definição das fontes */
+    --font-main: "Montserrat", sans-serif;
 
-  /* Definição do espaçamento padrao */
-  --padding-1: 2rem;
-  --padding-2: calc(2 * var(--padding-1));
-  --padding-3: calc(3 * var(--padding-1));
-  --padding-4: calc(4 * var(--padding-1));
+    /* Definição dos tamanhos de fonte */
+    --font-header: 2.25em;
+    --font-secondary: 1.25em;
+    --font-read: 0.5rem;
 
-  --margin-1: 1rem;
-  --margin-2: calc(2 * var(--margin-1));
-  --margin-3: calc(3 * var(--margin-1));
-  --margin-4: calc(4 * var(--margin-1));
+    /* Definição do espaçamento padrao */
+    --padding-1: 1rem;
+    --padding-2: calc(2 * var(--padding-1));
+    --padding-3: calc(3 * var(--padding-1));
+    --padding-4: calc(4 * var(--padding-1));
 
-  --gap-1: 1rem;
-  --gap-2: calc(2 * var(--gap-1));
-  --gap-3: calc(3 * var(--gap-1));
+    --margin-1: 1rem;
+    --margin-2: calc(2 * var(--margin-1));
+    --margin-3: calc(3 * var(--margin-1));
+    --margin-4: calc(4 * var(--margin-1));
+
+    --gap-1: 1rem;
+    --gap-2: calc(2 * var(--gap-1));
+    --gap-3: calc(3 * var(--gap-1));
 }
 
 html {
-  font-family: var(--font-main);
+    font-family: var(--font-main);
+    font-size: 275%;
 }
 
 .section {
-  padding: 0 var(--padding-3);
+    margin-top: var(--margin-4);
+    padding: 0 var(--padding-2);
 }
 
 .section-padded {
-  margin-top: calc(2 * var(--margin-4));
-  padding: var(--padding-4) var(--padding-3);
+    margin-top: var(--margin-2);
+    padding: var(--padding-2);
+}
+
+.section-padded .section-header {
+    margin-top: 0;
+    color: var(--col-white-100);
 }
 
 .section-header {
-  margin-top: calc(2 * var(--margin-4));
-  font-size: 6rem;
-  font-weight: 900;
-  color: var(--col-green-100);
+    margin-top: var(--margin-4);
+    font-size: var(--font-header);
+    font-weight: 900;
+    color: var(--col-green-100);
 
-  text-align: center;
+    text-align: center;
 }
 
 .card-header {
-  font-size: 4rem;
-  font-weight: bold;
+    font-size: 1rem;
+    font-weight: bold;
 }
