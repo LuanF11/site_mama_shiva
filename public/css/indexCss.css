@@ -548,6 +548,7 @@
   background-color: var(--col-green-100);
   background-image: url("../img/background_big_green_blob.svg");
   background-size: 100%;
+  background-repeat: no-repeat;
 
   color: var(--col-white-100);
   font-weight: bold;
@@ -617,4 +618,46 @@
   border: none;
 
   background-color: var(--col-yellow-100);
+}
+
+/*  ------------------------------------------------------ */
+
+.footer {
+  margin: 0;
+  margin-top: -10px;
+  padding-top: calc(2 * var(--padding-4));
+  background-color: var(--col-green-100);
+  background-image: url("../img/background_big_green_blob_2.svg");
+  background-size: 100%;
+  color: var(--col-white-100);
+
+  text-align: center;
+}
+
+.footer--header {
+  width: min-content;
+  margin: 0 auto;
+}
+
+.footer--header img {
+  height: 6em;
+}
+
+.footer--card,
+.footer--social {
+  margin-top: var(--margin-4);
+}
+
+.footer--card-header,
+.footer--social-header {
+  font-weight: bold;
+}
+
+.footer--card-message {
+  margin-top: var(--margin-2);
+  line-height: 2rem;
+}
+
+.footer-legislative .footer--card-message {
+  text-decoration: underline;
 }
