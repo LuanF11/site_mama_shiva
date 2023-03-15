@@ -818,5 +818,54 @@
         grid-column: 1;
         background-color: seashell;
     }
+
+    /*  ------------------------------------------------------ */
+
+    .benefits {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .benefits--texts {
+        grid-column: 1;
+
+        padding-left: var(--padding-4);
+    }
+
+    .benefits--header {
+        text-align: left;
+    }
+
+    .benefits--card {
+        display: grid;
+        grid-template-columns: 2em 1fr;
+        gap: var(--gap-1);
+
+        text-align: left;
+        color: var(--col-green-100);
+        font-size: var(--font-read);
+
+        padding-right: var(--padding-4);
+    }
+
+    .benefits--card-image {
+        height: 1.5em;
+        margin-top: 1em;
+    }
+
+    .benefits--card-message {
+        display: block;
+
+        margin-top: calc(0.5 * var(--margin-1));
+    }
+
+    .benefits--images img {
+        width: 80%;
+        margin-top: var(--margin-4);
+    }
+
+    .benefits--image:first-of-type {
+        float: right;
+    }
     /*  ------------------------------------------------------ */
 }
