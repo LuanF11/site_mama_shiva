@@ -586,7 +586,7 @@
 
     background-color: var(--col-green-100);
     background-image: url("../img/background_big_green_blob.svg");
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
 
     color: var(--col-white-100);
@@ -1023,6 +1023,41 @@
 
     .booking {
         display: block;
+
+        position: relative;
+
+        background-image: url("/img/background_big_green_blob3.svg");
+        background-position: right;
+        overflow: hidden;
+    }
+
+    .booking::before {
+        content: "";
+
+        position: absolute;
+        left: -23%;
+
+        height: 50%;
+        aspect-ratio: 1;
+        background-image: url("/img/background_small_italian_texture.png");
+        background-size: 30%;
+
+        transform: matrix(0.26, -0.97, -0.97, -0.26, 0, 0);
+        opacity: 0.9;
+    }
+
+    .booking::after {
+        content: "";
+
+        position: absolute;
+        right: 0;
+        top: 8em;
+
+        height: 60%;
+        aspect-ratio: 1;
+
+        background-image: url("/img/footer_couple.png");
+        background-size: 100%;
     }
 
     .booking--body {
@@ -1037,11 +1072,17 @@
 
     .booking--body div {
         display: grid;
+        z-index: 1;
     }
 
     .booking--body label {
         margin-top: 0;
     }
+
+    .booking--body input {
+        height: 3em;
+    }
+
     .booking--body .booking--item:nth-of-type(1) {
         grid-column: span 4;
         grid-row: 1;
@@ -1073,12 +1114,22 @@
         grid-row: 4;
     }
 
-    .booking--body div:nth-child(9) {
+    .booking--body div:has(.booking--terms) {
         grid-column: span 7;
         grid-row: 5;
+
+        grid-template-columns: 5fr 2fr;
+        gap: var(--gap-2);
     }
 
-    .booking--terms {
+    .booking--body div:has(.booking--terms) div {
+        margin-top: var(--margin-1);
+        font-size: var(--font-read);
+    }
+
+    .booking--body div:has(.booking--terms) button {
+        margin-top: var(--margin-1);
+        width: 2fr;
         font-size: var(--font-read);
     }
     /*  ------------------------------------------------------ */
