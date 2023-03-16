@@ -964,4 +964,30 @@
         height: calc(0.7 * var(--font-read));
     }
     /*  ------------------------------------------------------ */
+
+    .critics {
+        padding: var(--padding-4);
+    }
+
+    .critics--header {
+        text-align: left;
+    }
+
+    .critics--clients-header,
+    .critics--reviewers-header {
+        text-align: left;
+    }
+
+    .critics--body {
+        display: flex;
+        flex-direction: row;
+        gap: var(--gap-4);
+
+        height: min-content;
+    }
+
+    .critics--card-image {
+        width: 10em;
+    }
+    /*  ------------------------------------------------------ */
 }
