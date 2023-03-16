@@ -346,6 +346,8 @@
     background-size: 100% 100%;
 
     text-align: center;
+
+    padding: calc(2 * var(--padding-4)) !important;
 }
 
 .critics--clients {
@@ -718,6 +720,10 @@
         font-size: 100%;
     }
 
+    .section-padded {
+        padding: var(--padding-4) calc(2 * var(--padding-4));
+    }
+
     /*  ------------------------------------------------------ */
 
     .navbar--logo {
@@ -1007,6 +1013,12 @@
 
     .informations--faq-card-header::before {
         background-size: contain;
+    }
+
+    /*  ------------------------------------------------------ */
+    .booking--body {
+        display: grid;
+        background-color: blueviolet;
     }
     /*  ------------------------------------------------------ */
 }
