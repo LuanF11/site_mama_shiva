@@ -680,6 +680,10 @@
     height: 2em;
 }
 
+.footer--body:nth-child(7) {
+    display: none;
+}
+
 .footer--card,
 .footer--social {
     margin-top: var(--margin-2);
@@ -1077,5 +1081,56 @@
     .booking--terms {
         font-size: var(--font-read);
     }
+    /*  ------------------------------------------------------ */
+
+    .footer--header img {
+        height: 3em;
+    }
+
+    .footer--body {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "contacts owners mission"
+            "address owners mission"
+            "time legislative social";
+
+        margin-top: var(--margin-2);
+    }
+
+    .footer--body div:nth-child(1) {
+        grid-area: contacts;
+    }
+
+    .footer--body div:nth-child(2) {
+        grid-area: address;
+    }
+
+    .footer--body div:nth-child(3) {
+        grid-area: time;
+    }
+
+    .footer--body div:nth-child(4) {
+        grid-area: social;
+    }
+
+    .footer--body div:nth-child(4) img:nth-child(2) {
+        margin: 0 1em;
+    }
+
+    .footer--body div:nth-child(5) {
+        grid-area: owners;
+        grid-row-end: span 2;
+    }
+
+    .footer--body div:nth-child(6) {
+        grid-area: legislative;
+    }
+
+    .footer--body div:nth-child(7) {
+        grid-area: mission;
+    }
+
     /*  ------------------------------------------------------ */
 }
