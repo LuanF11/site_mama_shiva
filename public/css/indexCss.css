@@ -445,7 +445,7 @@
 }
 
 .critics--reviewers .critics--card {
-    background-image: url("../img/texture_checkboard.png");
+    background-image: url("../img/background_small_italian_texture.png");
 
     background-size: auto 20%;
     background-repeat: repeat-x;
@@ -554,7 +554,6 @@
 
     color: var(--col-green-100);
     font-weight: 500;
-    fonteeeeeee: 1rem;
 }
 
 .informations--faq-card-header::before {
@@ -856,6 +855,8 @@
     .benefits--card-message {
         display: block;
 
+        line-height: 1.5em;
+
         margin-top: calc(0.5 * var(--margin-1));
     }
 
@@ -867,5 +868,38 @@
     .benefits--image:first-of-type {
         float: right;
     }
+    /*  ------------------------------------------------------ */
+
+    .features {
+        display: grid;
+
+        position: relative;
+    }
+
+    .features::after {
+        content: "";
+
+        position: absolute;
+        top: -25%;
+        left: -16.6%;
+
+        overflow: hidden;
+
+        background-image: url("/img/background_big_italian_texture.svg");
+        background-position: right;
+
+        height: 20em;
+        aspect-ratio: 1;
+    }
+
+    .features--body {
+        display: flex;
+
+        padding: 0 var(--padding-4);
+        gap: var(--gap-4);
+
+        margin-top: var(--margin-1);
+    }
+
     /*  ------------------------------------------------------ */
 }

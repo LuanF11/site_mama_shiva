@@ -29,6 +29,7 @@
     --gap-1: 1rem;
     --gap-2: calc(2 * var(--gap-1));
     --gap-3: calc(3 * var(--gap-1));
+    --gap-4: calc(4 * var(--gap-1));
 }
 
 html {
@@ -42,7 +43,7 @@ html {
 }
 
 .section-padded {
-    margin-top: var(--margin-2);
+    margin-top: var(--margin-4);
     padding: var(--padding-2);
 }
 
