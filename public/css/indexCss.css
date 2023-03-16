@@ -990,4 +990,23 @@
         width: 10em;
     }
     /*  ------------------------------------------------------ */
+
+    .informations {
+        padding: 0 calc(2 * var(--padding-4));
+    }
+
+    .informations--container {
+        display: grid;
+        grid-template-columns: 5fr 4fr;
+        gap: var(--gap-4);
+    }
+
+    .informations--card-message {
+        max-width: 80%;
+    }
+
+    .informations--faq-card-header::before {
+        background-size: contain;
+    }
+    /*  ------------------------------------------------------ */
 }
