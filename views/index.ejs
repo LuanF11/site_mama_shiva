@@ -12,26 +12,29 @@
 </head>
 
 <body>
-  <div class="navbar">
+  <nav class="navbar">
     <img class="navbar--logo" src="img/logo.svg" alt="Logo do Mama Shiva">
     <div class="navbar--navigation">
       <img class="navbar--hamburger" src="/img/icon_hamburger_menu.svg" alt="Menu de navegação">
       <div class="navbar--navigation-links">
-        <a href="">Informações</a>
-        <a href="">Cardápio</a>
-        <a href="">Reservas</a>
+        <a href="#informations_section">Informações</a>
+        <a href="#menu_section">Cardápio</a>
+        <a href="#booking_section">Reservas</a>
       </div>
     </div>
-  </div>
 
-  <div class="hero">
+    <div class="navbar--fixed hidden">
+    </div>
+  </nav>
+
+  <section class="hero">
     <div class="hero--content section">
       <div class="hero--headline">Um encontro entre sabores, tradições e culturas</div>
       <div class="hero--message">Viaje pela Índia e Itália através do nosso renomado cardápio de fusão</div>
       <div class="hero--cta">
-        <button class="hero--button">Faça sua reserva</button>
+        <a href="#booking_section" class="hero--button">Faça sua reserva</a>
         <span> ou </span>
-        <button class="hero--button">Conheça o cardápio</button>
+        <a href="#menu_section" class="hero--button">Conheça o cardápio</a>
       </div>
       <div class="hero--social-proof">
         <img class="hero--social-proof-image" src="/img/icon_michelin.png" alt="Três estrelas de Michelin">
@@ -41,9 +44,9 @@
     <div class="hero--image">
       <img src="/img/hero_image.png" alt="Uma pessoa preparando uma massa, com ingredientes ao fundo">
     </div>
-  </div>
+  </section>
 
-  <div class="benefits section">
+  <section class="benefits section">
     <div class="benefits--texts">
       <div class="benefits--header section-header">Por que o Mama Shiva?</div>
       <div class="benefits--body">
@@ -77,9 +80,9 @@
       <img class="benefits--image" src="/img/indian_food_1.png" alt="Um prato de comida indiana">
       <img class="benefits--image" src="/img/woman_eating.png" alt="Uma mulher feliz comendo">
     </div>
-  </div>
+  </section>
 
-  <div class="features section">
+  <section class="features section">
     <div class="features--header section-header">Como trabalhamos</div>
     <div class="features--body">
 
@@ -102,18 +105,18 @@
       </div>
 
     </div>
-  </div>
+  </section>
 
-  <div class="partners section-padded">
+  <section class="partners section-padded">
     <div class="partners--header section-header">Nossos parceiros incluem</div>
     <div class="partners--body">
       <img src="/img/logo_friendlys.svg" alt="Logomarca Friendly's">
       <img src="/img/logo_michelin.svg" alt="Logomarca Michelin">
       <img src="/img/logo_pavilion.svg" alt="Logomarca Food Pavilion">
     </div>
-  </div>
+  </section>
 
-  <div class="menu section">
+  <section class="menu section" id="menu_section">
     <div class="menu--header section-header">Cardápio</div>
     <div class="menu--navbar">
       <div class="menu--navbar-item" data-active="false">Entradas<img src="/img/icon_dropdown.svg" alt="Ícone de dropdown"></div>
@@ -157,9 +160,9 @@
       1/4
       <img src="/img/icon_next.svg" alt="Ícone de avançar">
     </div>
-  </div>
+  </section>
 
-  <div class="critics section-padded">
+  <section class="critics section-padded">
     <div class="critics--header section-header">O que dizem</div>
     <div class="critics--body">
       <div class="critics--clients">
@@ -216,9 +219,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="informations section">
+  <section class="informations section" id="informations_section">
     <div class="informations--header section-header">
       Informações
     </div>
@@ -268,10 +271,9 @@
         </li>
       </ul>
     </div>
-  </div>
-  </div>
+  </section>
 
-  <div class="booking section-padded">
+  <section class="booking section-padded" id="booking_section">
     <div class="booking--header">Faça sua reserva</div>
     <form class="booking--body">
       <div class="booking--item">
@@ -312,7 +314,7 @@
         <button type="submit">Confirmar reserva</button>
       </div>
     </form>
-  </div>
+  </section>
 
   <footer class="footer section-padded">
     <div class="footer--header">
@@ -337,13 +339,13 @@
       <div class="footer--card">
         <div class="footer--card-header">Redes sociais</div>
         <div class="footer--card-message">
-          <img src="/img/icon_facebook.svg" alt="Ícone do facebook da empresa">
-          <img src="/img/icon_twitter.svg" alt="Ícone do twitter da empresa">
-          <img src="/img/icon_instagram.svg" alt="Ícone do instagram da empresa">
+          <img class="footer--social-image" src="/img/icon_facebook.svg" alt="Ícone do facebook da empresa">
+          <img class="footer--social-image" src="/img/icon_twitter.svg" alt="Ícone do twitter da empresa">
+          <img class="footer--social-image" src="/img/icon_instagram.svg" alt="Ícone do instagram da empresa">
         </div>
       </div>
 
-      <div class="footer--card">
+      <div class="footer--card footer--founders">
         <div class="footer--card-header">Uma empresa de:</div>
         <div class="footer--card-message">
           <p>Angella Rossi De Luca</p>
@@ -351,7 +353,7 @@
         </div>
       </div>
 
-      <div class="footer--card">
+      <div class="footer--card footer--legislative">
         <div class="footer--card-header">Legistalivos</div>
         <div class="footer--card-message">
           <p>Política de dados</p>
@@ -367,6 +369,17 @@
       </div>
     </div>
   </footer>
+
+  <aside class="aside--body hidden">
+    <div class="aside--close"></div>
+
+    <div class="aside--content">
+      <span>O que deseja encontrar?</span>
+      <a class="aside--item" href="#informations_section">Informações</a>
+      <a class="aside--item" href="#menu_section">Cardápio</a>
+      <a class="aside--item" href="#booking_section">Reservas</a>
+    </div>
+  </aside>
 
   <script src="/js/csshelper.js"></script>
 </body>

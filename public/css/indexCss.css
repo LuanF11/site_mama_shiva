@@ -1,7 +1,7 @@
 .navbar {
-    position: fixed;
+    position: absolute;
     inset: 0 0 100%;
-    z-index: 1;
+    z-index: 2;
 
     display: flex;
     justify-content: space-between;
@@ -27,17 +27,22 @@
     height: 2em;
 }
 
-.navbar--hamburger-background {
+.navbar--fixed {
     position: fixed;
-    top: 5em;
     right: 1em;
+    bottom: 2em;
 
-    padding: 1em;
-    height: 1em;
+    border-radius: 0.25em;
 
-    border-radius: 1em;
     background: var(--col-green-100);
-    opacity: 0.5;
+    background-image: url("/img/icon_hamburger_menu.svg");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    padding: 1.5em;
+
+    opacity: 0.8;
 }
 
 /*  ------------------------------------------------------ */
@@ -75,12 +80,14 @@
 }
 
 .hero--button {
-    width: 100%;
+    display: block;
 
     font-weight: 900;
     font-size: 1em;
     color: var(--col-white-100);
     white-space: nowrap;
+    text-decoration: none;
+    text-align: center;
 
     border-radius: 1em;
 
@@ -601,6 +608,11 @@
     display: grid;
 }
 
+.booking--body div {
+    display: grid;
+    z-index: 1;
+}
+
 .booking--body label {
     font-size: calc(0.8 * var(--font-secondary));
     margin-top: var(--margin-2);
@@ -663,7 +675,7 @@
     padding-top: var(--padding-4);
     background-color: var(--col-green-100);
     background-image: url("../img/background_big_green_blob_2.svg");
-    background-size: 100%;
+    background-size: cover;
     color: var(--col-white-100);
 
     text-align: center;
@@ -701,15 +713,63 @@
 
 .footer--social-image {
     aspect-ratio: 1;
-    height: 1.5em;
+    height: 2.5em;
 
     margin: 0 calc(0.5 * var(--margin-1));
     margin-top: var(--margin-1);
 }
 
-.footer-legislative .footer--card-message {
+.footer--legislative .footer--card-message,
+.footer--founders .footer--card-message {
     text-decoration: underline;
 }
+
+.aside--body {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+
+    background-color: var(--col-green-200);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease;
+
+    z-index: 3;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.aside--close {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+
+    padding: 2em;
+
+    background-image: url("/img/icon_close.svg");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.aside--content {
+    display: grid;
+    gap: var(--gap-1);
+
+    text-align: center;
+    font-weight: bold;
+    color: var(--col-yellow-100);
+}
+
+.aside--content span {
+    font-size: var(--font-secondary);
+}
+
+.aside--content a {
+    color: var(--col-white-100);
+}
+/*  ------------------------------------------------------ */
 
 @media screen and (min-width: 1024px) {
     :root {
@@ -726,14 +786,14 @@
         padding: var(--padding-4) calc(2 * var(--padding-4));
     }
 
+    .navbar--hamburger {
+        display: none;
+    }
+
     /*  ------------------------------------------------------ */
 
     .navbar--logo {
         height: 3em;
-    }
-
-    .navbar--hamburger {
-        display: none;
     }
 
     .navbar--navigation-links {
@@ -792,7 +852,7 @@
         align-items: baseline;
     }
 
-    .hero--cta button {
+    .hero--cta a {
         display: inline;
 
         font-weight: bold;
@@ -1066,11 +1126,6 @@
         max-width: 60%;
 
         margin-top: var(--margin-2);
-    }
-
-    .booking--body div {
-        display: grid;
-        z-index: 1;
     }
 
     .booking--body label {

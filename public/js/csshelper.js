@@ -1,22 +1,34 @@
-const navbar = document.querySelector('.navbar');
-const navbarLogo = document.querySelector('.navbar--logo');
-const navbarHamburger = document.querySelector('.navbar--hamburger');
+const navbarHeroHamburger = document.querySelector('.navbar--hamburger');
+const navbarFixed = document.querySelector('.navbar--fixed');
+const aside = document.querySelector('.aside--body');
+const asideCloseButton = document.querySelector('.aside--close');
+const asideLink = document.querySelectorAll('.aside--item')
 const windowHeight = window.innerHeight;
-const logoHeight = navbarLogo.offsetHeight;
 
+const openAside = () => {
+  aside.classList.remove("hidden")
+}
 
-// Esconde a logo quando o scroll ultrapassa o fold
-window.addEventListener('scroll', function() {
+const closeAside = () => {
+  aside.classList.add("hidden")
+}
+
+window.addEventListener('scroll', () => {
   const scrollTop = window.pageYOffset;
-  const logoTop = navbarLogo.getBoundingClientRect().top + scrollTop;
 
-  if (logoTop > windowHeight) {
-    navbar.style.justifyContent = "end";
-    navbarLogo.style.display = "none"
-    navbarHamburger.classList.add("navbar--hamburger-background");
-} else {
-    navbar.style.justifyContent = "space-between";
-    navbarLogo.style.display = "block"
-    navbarHamburger.classList.remove("navbar--hamburger-background");
+  if (scrollTop > windowHeight) {
+    // Após o fold
+    navbarFixed.classList.remove("hidden")
+  } else {
+    // Antes do fold
+    navbarFixed.classList.add("hidden")
   }
+});
+
+navbarHeroHamburger.addEventListener('click', () => { openAside() })
+navbarFixed.addEventListener('click', () => { openAside() })
+
+asideCloseButton.addEventListener("click", () => { closeAside() })
+asideLink.forEach(link => {
+  link.addEventListener("click", () => { closeAside() })
 });

@@ -65,3 +65,7 @@ html {
     font-size: 1rem;
     font-weight: bold;
 }
+
+.hidden {
+    display: none !important;
+}
