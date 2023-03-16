@@ -1016,9 +1016,66 @@
     }
 
     /*  ------------------------------------------------------ */
+
+    .booking {
+        display: block;
+    }
+
     .booking--body {
         display: grid;
-        background-color: blueviolet;
+        gap: var(--gap-1);
+        grid-template-columns: repeat(7, 1fr);
+
+        max-width: 60%;
+
+        margin-top: var(--margin-2);
+    }
+
+    .booking--body div {
+        display: grid;
+    }
+
+    .booking--body label {
+        margin-top: 0;
+    }
+    .booking--body .booking--item:nth-of-type(1) {
+        grid-column: span 4;
+        grid-row: 1;
+    }
+
+    .booking--body .booking--item:nth-of-type(2) {
+        grid-column: span 3;
+        grid-row: 1;
+    }
+
+    .booking--body .booking--item:nth-of-type(3) {
+        grid-column: span 3;
+        grid-row: 2;
+    }
+
+    .booking--body .booking--item:nth-of-type(4) {
+        grid-column: span 4;
+        grid-row: 2;
+    }
+
+    .booking--body
+        .booking--item:is(:nth-of-type(5), :nth-of-type(6), :nth-of-type(7)) {
+        grid-column: span 2;
+        grid-row: 3;
+    }
+
+    .booking--body .booking--item:nth-of-type(8) {
+        grid-column: span 7;
+        grid-row: 4;
+    }
+
+    .booking--body div:nth-child(9) {
+        grid-column: span 7;
+        grid-row: 5;
+    }
+
+    .booking--terms {
+        font-size: var(--font-read);
     }
     /*  ------------------------------------------------------ */
 }
