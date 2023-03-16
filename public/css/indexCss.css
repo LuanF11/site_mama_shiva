@@ -346,8 +346,6 @@
     background-size: 100% 100%;
 
     text-align: center;
-
-    padding: calc(2 * var(--padding-4)) !important;
 }
 
 .critics--clients {
