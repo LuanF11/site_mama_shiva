@@ -4,6 +4,7 @@ const aside = document.querySelector('.aside--body');
 const asideCloseButton = document.querySelector('.aside--close');
 const menuItem = document.querySelectorAll('.menu--navbar-item');
 const asideLink = document.querySelectorAll('.aside--item');
+const faq = document.querySelectorAll('.informations--faq-card-header');
 const windowHeight = window.innerHeight;
 
 // Salva um modelo de card já existente na página
@@ -142,3 +143,16 @@ asideCloseButton.addEventListener("click", () => { closeAside() })
 asideLink.forEach(link => {
   link.addEventListener("click", () => { closeAside() })
 });
+
+console.log(faq)
+faq.forEach(faqHeader => {
+  faqHeader.addEventListener("click", e => {
+    console.log(e)
+
+    faq.forEach(faqItem => {
+      faqItem.dataset.active = "false"
+    })
+
+    faq[e.target.dataset.value].dataset.active = "true";
+  })
+})
