@@ -871,8 +871,6 @@
     /*  ------------------------------------------------------ */
 
     .features {
-        display: grid;
-
         position: relative;
     }
 
@@ -899,6 +897,22 @@
         gap: var(--gap-4);
 
         margin-top: var(--margin-1);
+    }
+
+    /*  ------------------------------------------------------ */
+
+    .partners--body {
+        flex-direction: row;
+        align-items: center;
+        gap: var(--gap-4);
+    }
+
+    .partners--body img {
+        display: block;
+
+        height: 2em;
+
+        margin-top: 0;
     }
 
     /*  ------------------------------------------------------ */
