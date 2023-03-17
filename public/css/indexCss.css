@@ -34,7 +34,8 @@
 
     border-radius: 0.25em;
 
-    background: var(--col-green-100);
+    background-color: var(--col-red-100);
+
     background-image: url("/img/icon_hamburger_menu.svg");
     background-size: 50%;
     background-repeat: no-repeat;
@@ -858,6 +859,27 @@
         text-decoration: none;
     }
 
+    .navbar--fixed {
+        opacity: 1;
+        padding: var(--padding-2);
+    }
+
+    .aside--body {
+        height: 30vh;
+        width: fit-content;
+
+        padding: var(--padding-2);
+
+        inset: auto 0 2em auto;
+
+        border-radius: 1em;
+    }
+
+    .aside--close {
+        top: unset;
+        bottom: 3em;
+    }
+
     /*  ------------------------------------------------------ */
 
     .hero {
@@ -1140,37 +1162,8 @@
         position: relative;
 
         background-image: url("/img/background_big_green_blob3.svg");
-        background-position: right;
+        background-position: top right;
         overflow: hidden;
-    }
-
-    .booking::before {
-        content: "";
-
-        position: absolute;
-        left: -23%;
-
-        height: 50%;
-        aspect-ratio: 1;
-        background-image: url("/img/background_small_italian_texture.png");
-        background-size: 30%;
-
-        transform: matrix(0.26, -0.97, -0.97, -0.26, 0, 0);
-        opacity: 0.9;
-    }
-
-    .booking::after {
-        content: "";
-
-        position: absolute;
-        right: 0;
-        top: 8em;
-
-        height: 60%;
-        aspect-ratio: 1;
-
-        background-image: url("/img/footer_couple.png");
-        background-size: 100%;
     }
 
     .booking--body {
@@ -1293,4 +1286,37 @@
     }
 
     /*  ------------------------------------------------------ */
+}
+
+@media screen and (min-width: 1100px) {
+    .booking::after {
+        content: "";
+
+        position: absolute;
+        right: 0;
+        top: 8em;
+
+        height: 60%;
+        aspect-ratio: 1;
+
+        background-image: url("/img/footer_couple.png");
+        background-size: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .booking::before {
+        content: "";
+
+        position: absolute;
+        left: -23%;
+
+        height: 50%;
+        aspect-ratio: 1;
+        background-image: url("/img/background_small_italian_texture.png");
+        background-size: 30%;
+
+        transform: matrix(0.26, -0.97, -0.97, -0.26, 0, 0);
+        opacity: 0.9;
+    }
 }
