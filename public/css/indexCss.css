@@ -1189,6 +1189,7 @@
 
     .booking--body input {
         height: 3em;
+        width: 100%;
     }
 
     .booking--body .booking--item:nth-of-type(1) {
