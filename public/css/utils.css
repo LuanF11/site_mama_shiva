@@ -4,10 +4,12 @@
     --col-red-100: #a12015;
     --col-green-100: #198642;
     --col-green-200: #157539;
-    --col-yellow-100: #ff9933;
+    --col-yellow-100: #ff8000;
     --col-white-100: #ffffff;
 
     /* Definição das fontes */
+    /* --font-main: "Eugusto Free Personal Use", sans-serif; */
+    /* --font-main: "Calisto MT", sans-serif; */
     --font-main: "Montserrat", sans-serif;
 
     /* Definição dos tamanhos de fonte */

@@ -156,10 +156,17 @@
       </li>
     </ul>
 
-    <div class="menu--slider">
-      1/4
-      <img src="/img/icon_next.svg" alt="Ícone de avançar">
+    <div class="menu--slider" data-index="0">
+      <img id="menu_slider_back" src="/img/icon_next.svg" alt="Ícone de retroceder a página do cardápio">
+      <span>1/2</span>
+      <img id="menu_slider_forw" src="/img/icon_next.svg" alt="Ícone de avançar a página do cardápio">
     </div>
+
+    <div class="menu--cta">
+      <div class="menu--cta-header">Gostou de algum prato?</div>
+      <a href="#booking_section" class="menu--cta-button">Faça sua reserva</a>
+    </div>
+
   </section>
 
   <section class="critics section-padded">
@@ -384,6 +391,7 @@
   </aside>
 
   <script src="/js/csshelper.js"></script>
+  <script src="/js/menu.js"></script>
 </body>
 
 </html>
