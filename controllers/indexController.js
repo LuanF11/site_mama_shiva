@@ -10,6 +10,17 @@ const indexController = {
         "css/indexCss.css",
       ]
     });
+  },
+
+  login(req, res) {
+    res.render('login', {
+      cssList: [
+        "css/reset.css",
+        "css/fonts.css",
+        "css/utils.css",
+        "css/loginCss.css",
+      ]
+    });
   }
 };
 

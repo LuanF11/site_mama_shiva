@@ -5,6 +5,7 @@ const path = require('path');
 const os = require('os');
 const ifaces = os.networkInterfaces();
 
+
 // Procura o primeiro endereço IPv4 não interno
 let ipAddress = null;
 Object.keys(ifaces).forEach((ifname) => {
@@ -20,7 +21,7 @@ Object.keys(ifaces).forEach((ifname) => {
 });
 
 // Libera o acesso à pasta public
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 
 const indexRouter = require('./routes/indexRoute');
 

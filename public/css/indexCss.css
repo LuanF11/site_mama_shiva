@@ -870,6 +870,13 @@ body {
         text-decoration: none;
     }
 
+    .navbar--navigation-links a:nth-last-child(-n+2)  {
+        font-weight: bold;
+        font-size: var(--font-read);
+        color: var(--col-yellow-100);
+        text-decoration: none;
+    }
+
     .navbar--fixed {
         opacity: 1;
         padding: var(--padding-2);
